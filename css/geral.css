@@ -1,0 +1,68 @@
+#corpo {
+border: 3px solid black;
+width: auto;
+height: auto;
+}
+#topo{
+border: 3px solid red;
+width: auto;
+height: 100px;
+}
+#menu {
+display: flex;
+justify-content: space-around;
+align-items: center;
+background: #ffffff;
+color: rgb(48, 4, 4);
+padding: 15px 0;
+cursor: pointer;
+border-radius: 6px;
+
+}
+.botao {
+    background-color: rgb(150, 71, 133);
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.botao:hover {
+    background-color: #91b7ff;
+}
+
+
+#conteudo {
+display: flex;
+justify-content: space-between;
+width: 100%;
+
+}
+
+#centro{
+border: 3px solid rgb(40, 148, 211);
+width: 1000px;
+height: 750px;
+
+}
+#direita{
+border: 3px solid rgb(206, 101, 31);
+width: 450px;
+height: 750px;
+
+
+}
+#esquerda{
+border: 3px solid rgb(204, 28, 166);
+width: 450px;
+height: 750px;
+
+}
+#rodape{
+border: 3px solid rgb(70, 16, 172);
+width: auto;
+height: 60px;
+}
