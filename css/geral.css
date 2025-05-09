@@ -2,18 +2,20 @@
 border: 3px solid black;
 width: auto;
 height: auto;
+background-color: #1c2120;
+
 }
 #topo{
-border: 3px solid red;
+border: 3px solid #1c2120;
 width: auto;
-height: 100px;
-background: pink;
+height: 250px;
+background-color: #1c2120;
 }
 #menu {
 display: flex;
 justify-content: space-around;
 align-items: center;
-background: #ffffff;
+background-image:  #1c2120;
 color: rgb(48, 4, 4);
 padding: 15px 0;
 cursor: pointer;
@@ -21,7 +23,7 @@ border-radius: 6px;
 
 }
 .botao {
-    background-color: rgb(150, 71, 133);
+    background-color: #4169e1;
     padding: 10px 20px;
     border-radius: 6px;
     color: #000000;
@@ -32,7 +34,7 @@ border-radius: 6px;
 
 
 .botao:hover {
-    background-color: #91b7ff;
+    background-color: #4169e1;
 }
 
 
@@ -44,28 +46,29 @@ width: 100%;
 }
 
 #centro{
-border: 3px solid rgb(40, 148, 211);
+border: 3px solid #4169e1;
 width: 1000px;
 height: 750px;
+color:#4169e1
 
 }
 #direita{
-border: 3px solid rgb(206, 101, 31);
+border: 3px solid #4169e1;
 width: 450px;
 height: 750px;
+color:#4169e1
 
 
 }
 #esquerda{
-border: 3px solid rgb(204, 28, 166);
+border: 3px solid #4169e1;
 width: 450px;
 height: 750px;
+color:#4169e1
 
 }
 #rodape{
-border: 3px solid rgb(70, 16, 172);
+border: 3px solid #4169e1;
 width: auto;
 height: 60px;
-background: blueviolet;
-    
 }
