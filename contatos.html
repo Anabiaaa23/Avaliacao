@@ -1,47 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <link href="css/geral.css" rel="stylesheet" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, inicial - scale=1.0">
-    <title>Projeto</title>
-  </head>
-  <body>
-    <div id="corpo">
-      <div id="topo">
-          <h1>Contatos</h1>
-          <p></p>
-      </div>
-      <div id="menu">
-      <a class="botao" href="home.html">Home</a>
-      <a class="botao" href="empresa.html">A Empresa</a>
-      <a class="botao" href="servicos.html">Serviços</a>
-      <a class="botao" href="contatos.html">Contatos</a>
-      <a class="botao" href="faleconosco.html">Fale conosco</a>
-      </div>
-     
-      <div id="conteudo">
-          <div id="esquerda">
-              <h2>Esquerda</h2>
-              <img src="https://i.pinimg.com/736x/96/e1/a3/96e1a336a5b1cbf1030d62f09115e6dc.jpg" alt="Imagem Esquerda"
-              width="90%" height="400">
-          </div>
-          <div id="centro">
-              <h2>Centro</h2>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/V2er5MzBu4Y?si=GwySJDACSopHD_H3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <p></p>
-          </div>
-          <div id="direita">
-              <h2>Direita</h2>
-              <img src="https://img.elo7.com.br/product/zoom/4DB572D/sousplat-toalha-de-croche-valor-unitario-e-sob-encomenda-sousplat.jpg" alt="Imagem da direita"
-              width="90%" height="400">
-          
-            </div>
-      </div>
-     
-      <div id="rodape">
-          <h2>Feito por: ana Beatriz</h2>
-  
-      </div>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Pedidos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      background: #f0f8ff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color:  #003247;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #4169e1;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid  #003247;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: #4169e1;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #4169e1;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="seu-script-de-processamento.php" method="post">
+    <h2>Faça seu pedido!</h2>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="telefone1">Telefone:</label>
+    <input type="tel" id="telefone1" name="telefone1" required>
+
+    <label for="peca">Peça que deseja:</label>
+    <input type="text" id="peca" name="peca" required>
+
+    <label for="endereco">Endereço:</label>
+    <textarea id="endereco" name="endereco" rows="3" required></textarea>
+
+    <label for="telefone2">E-mail:</label>
+    <input type="mail" id="e-mail" name="e-mail">
+
+    <button type="submit">Enviar pedido</button>
+  </form>
+
+</body>
+</html>
