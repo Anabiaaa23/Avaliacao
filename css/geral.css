@@ -55,9 +55,7 @@ nav ul li a:hover::after {
     bottom: -5px;
     left: 0;
 }
-
 .banner {
-    background-image: url("https://i.pinimg.com/736x/81/ca/43/81ca43db16f54f9d1d00d82b589ce8a5.jpg");
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -66,6 +64,29 @@ nav ul li a:hover::after {
     justify-content: center;
     text-align: center;
 }
+
+
+.banner.home {
+    background-image: url("https://i.pinimg.com/736x/81/ca/43/81ca43db16f54f9d1d00d82b589ce8a5.jpg");
+}
+
+.banner.sobre {
+    background-image: url("https://i.pinimg.com/736x/44/1c/f8/441cf8191c63a2b8b4d7494423c6ba46.jpg");
+}
+
+.banner.produtos {
+    background-image: url("https://i.pinimg.com/736x/21/5d/55/215d554ad65432c5cce8606868537a35.jpg");
+}
+
+.banner.faleconosco {
+    background-image: url("https://i.pinimg.com/736x/d7/87/0f/d7870f1f68eadc1b58412f11815aea84.jpg");
+}
+
+.banner.contato {
+    background-image: url("https://i.pinimg.com/736x/70/d9/74/70d974c7bae3c586fea20c42cad5e2e4.jpg");
+}
+
+    
 
 .banner-content {
     background-color: rgba(255, 255, 255, 0.7);
