@@ -1,77 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Pedidos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f8ff;
-      padding: 20px;
-    }
-    form {
-      max-width: 400px;
-      margin: auto;
-      background: #f0f8ff;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      text-align: center;
-      color:  #003247;
-    }
-    label {
-      display: block;
-      margin-top: 10px;
-      color: #4169e1;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border-radius: 8px;
-      border: 1px solid  #003247;
-    }
-    button {
-      margin-top: 15px;
-      width: 100%;
-      padding: 10px;
-      background-color: #4169e1;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    button:hover {
-      background-color: #4169e1;
-    }
-  </style>
+      <link href="css/geral.css" rel="stylesheet" />
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, inicial - scale=1.0">
+      <title>Projeto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <form action="seu-script-de-processamento.php" method="post">
-    <h2>Faça seu pedido!</h2>
+ <header>
+  <div class="nome">
+    CROCHETER</div>
+  <nav>
+      <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="empresa.html">Sobre Nós</a></li>
+          <li><a href="servicos.html">Produtos</a></li>
+          <li><a href="faleconosco.html">Cuidados</a></li>
+          <li><a href="contatos.html">Contato</a></li>
+      </ul>
+  </nav>
+ </header>
 
+ <section class="banner">
+ </div>
+ </section>
+ <section class="formulario">
+  <h2>Faça seu pedido</h2>
+  <p>Com amor, Crocheter!</p>
+
+  <form id="pedidoForm">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required>
 
-    <label for="telefone1">Telefone:</label>
-    <input type="tel" id="telefone1" name="telefone1" required>
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
 
     <label for="peca">Peça que deseja:</label>
     <input type="text" id="peca" name="peca" required>
 
     <label for="endereco">Endereço:</label>
-    <textarea id="endereco" name="endereco" rows="3" required></textarea>
+    <input type="text" id="endereco" name="endereco" required>
 
-    <label for="telefone2">E-mail:</label>
-    <input type="mail" id="e-mail" name="e-mail">
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
 
-    <button type="submit">Enviar pedido</button>
+    <button type="submit">Enviar Pedido</button>
   </form>
-
+ </section>
+ <script src="script.js"></script>
+ <footer>
+  <p>Feito por Ana Beatriz</p>
+</footer>
 </body>
 </html>
-
