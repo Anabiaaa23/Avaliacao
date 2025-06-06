@@ -48,3 +48,15 @@ document.getElementById('pedidoForm').addEventListener('submit', function(e) {
   alert('Pedido enviado com sucesso! Será feito com todo amor e carinho que existe na Crocheter!!');
   this.reset();
 });
+
+ document.getElementById('telefone').addEventListener('input', function (e) {
+    let valor = e.target.value.replace(/\D/g, ''); 
+  
+    if (valor.length <= 10) {
+      valor = valor.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+    } else {
+      valor = valor.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+    }
+  
+    e.target.value = valor;
+  });
